@@ -10,7 +10,7 @@ function Area(length,width){
      let A= length*width;
      console.log(A)
 }
-Area(5,5)
+Area(5,6)
 
 
 //3. Temperature converter celcius to ferenheit
