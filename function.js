@@ -13,19 +13,19 @@ function Area(length,width){
 Area(5,6)
 
 
-//3. Temperature converter celcius to ferenheit
-function celciusConverter(celcTemp){
-     let TemperatureInFeren = (celcTemp * 9/5) + 32 ;
-     console.log(TemperatureInFeren)
+//3. Temperature converter celcius to fahrenheit
+function celciusToFahrenheit(celcTemp){
+     let fahrenheitTemperature = (celcTemp * 9/5) + 32 ;
+     console.log(`${celcTemp}°C = ${fahrenheitTemperature}°F`)
 }
-celciusConverter(40)
+celciusToFahrenheit(42)
 
-//4. Temperature converter ferenheit to celcius 
-function ferenheitConverter(ferenTemp){
-     let TemperatureInCel=(ferenTemp - 32) * 5/9 ;
-     console.log(TemperatureInCel)
+//4. Temperature converter fahrenheit to celcius 
+function fahrenheitToCelcius (fahrenTemp){
+     let celciusTemperature = (fahrenTemp - 32) * 5/9 ;
+     console.log(`${fahrenTemp}°F  = ${celciusTemperature}°C`)
 }
-ferenheitConverter(108)
+fahrenheitToCelcius(108)
 
 
 
