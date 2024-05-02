@@ -3,17 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>counter</title>
   <script src="hello worls.js"></script>
 </head>
 <body>
+
+  <h1>0</h1>
    <button onclick ="counter()">Click here</button>
+
+
     <script>
-    function counter(){
-        let count = 0;
-        count = count + 1;
-        console.log(count)
+      let count = 0;
+    // function counter(){
+    //      count = count + 1;
+    //     console.log(count)
+    //   }
+      
+
+      function counter(){
+              // select element by tag name way1
+      var counterElements = document.getElementsByTagName('h1')[0];
+      
+           // select element by id  way2
+            // var counterElements = document.getElementbyId('h1'); 
+
+            // select element by class way3
+            // var counterElements = document.getElementsbyClassName('h1'); 
+
+      count += 1;
+      counterElements.innerText = count
+            // counterElements.innerHTML = '<span>'+count+'</span>';
       }
+
+      // function counter() {
+      //       // select element by tag name
+      //       var counterElements = document.getElementsByTagName('h1')[0]; 
+            
+            // select element by id
+            // var counterElements = document.getElementbyId('h1'); 
+
+            // select element by class
+            // var counterElements = document.getElementsbyClassName('h1'); 
+
+
+            // count += 1;
+
+            // counterElements.innerText = count;
+
+            // counterElements.innerHTML = '<span>'+count+'</span>';
+
     </script>
 </body>
 </html>
