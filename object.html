@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        // creation of object
+        var studentDetails = {
+            name: "saroj",
+            student_id: "TP_RP_01",
+            courses: ["React", "NodeJS"],
+            batch_code: ["TP_RP_06"],
+            skills: ["HTML", "CSS", "JS"],
+            placed: false,
+
+            addCourse: function (course) {
+                studentDetails.courses.push(course);
+            },
+        }
+
+
+
+        // Accesing Value
+        console.log("student Id", studentDetails.student_id);
+        console.log("Name", studentDetails.name);
+
+        console.log("courses", studentDetails["courses"]);
+
+        // change object value
+
+        studentDetails.placed = true;
+        console.log(studentDetails)
+
+        // New value Add
+
+        studentDetails["age"] = 25;
+        console.log(studentDetails)
+
+        studentDetails.addCourse(".Net");
+        console.log(studentDetails)
+
+        // delete
+
+        delete studentDetails.age;
+        console.log(studentDetails)
+
+
+
+        var products = [
+            {
+                title: "Razor Blackshark",
+                price: 199,
+                currency: "USD",
+                listing_date: "",
+                vendor: "Razor",
+                rating: 4,
+                total_rating: 5,
+                rating_by: 22,
+                bought: "200+",
+            },
+            {
+                title: "knife",
+                price: 180,
+                currency: "USD",
+                listing_date: "",
+                vendor: "A1 star",
+                rating: 4,
+                total_rating: 5,
+                rating_by: 25,
+                bought: "200+",
+            },
+            {
+                title: "Chair",
+                price: 500,
+                currency: "USD",
+                listing_date: "",
+                vendor: "xyz",
+                rating: 4,
+                total_rating: 5,
+                rating_by: 22,
+                bought: "200+",
+            },
+        ]
+
+        console.log(products)
+
+        //  instagram object
+
+        var sheela_insta = {
+            name: "sheela mishra",
+            usename: "shaiilyyyyy",
+            bio: true,
+            posts: 53,
+            followers: 204,
+            following: 218,
+        }
+
+        console.log(sheela_insta)
+
+
+        //  Google map object
+
+        var map = [
+            {
+                title: "Vin-R",
+                category: "Hospital",
+                rating: 4.8,
+                Total_rating: 5,
+                openStatus: true,
+                address: "vikhroli",
+                timming: [9 - 9],
+                makeAppoinment: function (name) {
+
+                },
+                locationlink : "http//location",
+                suggestions :"",
+                reviews_by : 482,
+                contactNo: 9830228899 ,
+                photos:["xyz","xyz"],
+                updates:[ "mothers day offer", "1st may offer"]
+            },
+            {
+                title: "ITM institute",
+                category: "College",
+                rating: 3.8,
+                Total_rating: 5,
+                openStatus: false,
+                address: "Pnavel",
+                timming: [9 - 5],
+                makeAddmission: function (name) {
+
+                },
+                locationlink : "http//location",
+                suggestions :"",
+                reviews_by : 234,
+                contactNo: 91144553322 ,
+                photos:[],
+                updates:[ "Career Webinar", "Blood Donation camp"]
+            }
+        ]
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
