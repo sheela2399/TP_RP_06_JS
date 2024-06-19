@@ -1,0 +1,23 @@
+/* Universal Selector */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Tag Selector */
+h1,
+input,
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Class Selector */
+.form-input {
+    padding: 10px 20px;
+}
+
+/* Id Selector */
+#heading {
+    color: blue;
+    text-align: center;
+}
