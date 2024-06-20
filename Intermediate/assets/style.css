@@ -2,22 +2,78 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-/* Tag Selector */
-h1,
-input,
-label {
+    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+
+
+/* Tag Selector */
+li{
+    list-style: none;
+}
+
 
 /* Class Selector */
 .form-input {
     padding: 10px 20px;
+    margin: 10px;
+    width: 250px;
+}
+
+.container {
+    background-color: rgb(98, 193, 193);
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
 }
 
 /* Id Selector */
 #heading {
     color: blue;
     text-align: center;
+    margin-bottom: 20px;
 }
+
+.button {
+    padding: 5px;
+    margin: 10px;
+    background-color: rgb(162, 219, 219);
+    font-size: 15px;
+    border-radius: 5px;
+    width: 150px;
+}
+
+form,
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+/* Login End */
+
+/* Navbar */
+.navbar{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "poppins" ;
+}
+
+.navbar > div > ul {
+    display: flex;
+  gap: 20px;
+}
+
+.navbar > div > ul >li:hover{
+    text-underline-offset: 5px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Navbar End */
